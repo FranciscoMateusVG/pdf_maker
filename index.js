@@ -36,7 +36,7 @@ async function generatePdf() {
       const page = await browser.newPage();
 
       // We set the page content as the generated html by handlebars
-      await page.setContent(html);
+      await page.setContent(html, { waitUntil: 'networkidle0' });
 
       // we Use pdf function to generate the pdf in the same folder as this file.
       await page.pdf({ path: "invoice.pdf", format: "A4" });

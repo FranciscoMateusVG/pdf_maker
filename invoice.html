@@ -2,8 +2,20 @@
 <html>
    <head>
       <meta charset="utf-8" />
-      <title>A simple, clean, and responsive HTML invoice template</title>
+      <title>PDF Template</title>
       <style>
+         @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,400&display=swap");
+         html, body {
+            font-family: 'Roboto', sans-serif !important;
+         }
+         @media print {
+            .quebrar-pagina-depois-daqui {
+               page-break-after: always;
+            }
+         }
+         hr {
+            border: 1px solid #a09e9e;
+         }
          .box {
             padding: 60px 80px 60px 80px;
             position: relative;
@@ -13,6 +25,16 @@
          }
          .div-data {
             float: right;
+         }
+         .infos-footer hr {
+            margin-bottom: 50px;
+         }
+         .infos-footer p {
+            font-size: 10pt;
+            margin-top: 0px;
+         }
+         .infos-footer span {
+            font-size: 10pt;
          }
          .infos-footer div:nth-child(1) {
             float: left;
@@ -29,15 +51,18 @@
          .imagem-primeira-pagina {
             position: absolute;
             left: -7px;
-            top: 344px;
+            top: 230px;
          }
          .div-titular {
             display: flex;
          }
-         @media print {
-            .quebrar-pagina-depois-daqui {
-               page-break-after: always;
-            }
+         .texto-central {
+            padding: 290px 0px;
+         }
+         .texto-central h1 {
+            color: #235aa8;
+            font-weight: lighter;
+            font-size: 40pt;
          }
       </style>
    </head>
@@ -50,36 +75,31 @@
             <div class="padding-controller">
                <img
                   class="imagem-primeira-pagina"
-                  src="images/primeira_pagina_imagem.png"
+                  src="https://imagizer.imageshack.com/img924/4069/JdiRtv.png"
                   alt="Imagem"
                />
                <div class="texto-central">
-                  <h1>Relatório de Planejamento Financeiro</h1>
+                  <h1>Relatório de<br />Planejamento<br />Financeiro</h1>
                </div>
                <div class="infos-footer">
                   <hr />
                   <div>
-                     <span>Mateus Nicolau</span>
-                     <p>Planejador Financeiro</p>
-                  </div>
-                  <div>
-                     <span>(31) 12345-6789</span>
+                     <span><b>(31) 12345-6789</b></span>
                      <p>mateus@wesharebrasil.com</p>
                   </div>
                   <div>
+                     <span><b>Mateus Nicolau</b></span>
+                     <p>Planejador Financeiro</p>
+                  </div>
+                  <br />
+                  <div>
                      <span>Nome da empresa LTDA</span>
-                     <p>www.nomedaempresa.com.br</p>
+                     <p><b>www.nomedaempresa.com.br</b></p>
                   </div>
                </div>
             </div>
          </div>
-         <div class="segunda-pagina">
-            <h1>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
-               quidem praesentium fugiat recusandae quibusdam? Totam nihil
-               soluta at, quaerat sed consectetur pariatur, saepe reprehenderit
-               voluptatum, perferendis perspiciatis facere! Nam, ea?
-            </h1>
+         <div class="segunda-pagina quebrar-pagina-depois-daqui">
             <div class="div-logo">
                minha logo
                <div>
@@ -178,7 +198,7 @@
                            </tr>
                         </tbody>
                      </table>
-                     <img src="../grafico.png" alt="Gráfico" />
+                     <!-- <img src="images/grafico.png" alt="Gráfico" /> -->
                   </div>
                </div>
             </div>
