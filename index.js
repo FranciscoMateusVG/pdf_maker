@@ -24,7 +24,7 @@ async function generatePdf() {
       // you can check by logging it on console
       // console.log(res)
 
-      console.log("Compiing the template with handlebars");
+      console.log("Compiling the template with handlebars");
       const template = hb.compile(res, { strict: true });
       // we have compile our code with handlebars
       const result = template(data);
