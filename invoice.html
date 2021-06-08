@@ -3,10 +3,10 @@
    <head>
       <meta charset="utf-8" />
       <title>A simple, clean, and responsive HTML invoice template</title>
-
       <style>
          .box {
             padding: 60px 80px 60px 80px;
+            position: relative;
          }
          .div-logo {
             float: left;
@@ -14,23 +14,70 @@
          .div-data {
             float: right;
          }
+         .infos-footer div:nth-child(1) {
+            float: left;
+         }
+         .infos-footer div:nth-child(2) {
+            float: right;
+         }
+         .infos-footer div:nth-child(3) {
+            display: block;
+         }
+         .padding-controller {
+            padding-left: 250px;
+         }
+         .imagem-primeira-pagina {
+            position: absolute;
+            left: -7px;
+            top: 344px;
+         }
+         @media print {
+            .quebrar-pagina-depois-daqui {
+               page-break-after: always;
+            }
+         }
       </style>
    </head>
 
    <body>
       <div class="box">
-        <div class="div-logo">
-            minha logo
-        </div>
-        <div class="div-data">
-            data
-        </div>
-        <div class="texto-central">
-            <h1>Relatório de Planejamento Financeiro</h1>
-        </div>
-        <div>
-            
-        </div>
+         <div class="primeira-pagina quebrar-pagina-depois-daqui">
+            <div class="div-logo">minha logo</div>
+            <div class="div-data">data</div>
+            <div class="padding-controller">
+               <img
+                  class="imagem-primeira-pagina"
+                  src="images/primeira_pagina_imagem.png"
+                  alt="Imagem"
+               />
+               <div class="texto-central">
+                  <h1>Relatório de Planejamento Financeiro</h1>
+               </div>
+               <div class="infos-footer">
+                  <hr />
+                  <div>
+                     <span>Mateus Nicolau</span>
+                     <p>Planejador Financeiro</p>
+                  </div>
+                  <div>
+                     <span>(31) 12345-6789</span>
+                     <p>mateus@wesharebrasil.com</p>
+                  </div>
+                  <div>
+                     <span>Nome da empresa LTDA</span>
+                     <p>www.nomedaempresa.com.br</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="segunda-pagina">
+            <h1>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+               quidem praesentium fugiat recusandae quibusdam? Totam nihil
+               soluta at, quaerat sed consectetur pariatur, saepe reprehenderit
+               voluptatum, perferendis perspiciatis facere! Nam, ea?
+            </h1>
+         </div>
       </div>
    </body>
 </html>
