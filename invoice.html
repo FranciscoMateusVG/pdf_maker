@@ -25,6 +25,29 @@
         }
         .div-data {
           float: right;
+          color: #235aa8;
+        }
+        /* dia */
+        .div-data span:nth-child(1) {
+           font-size: 50pt;
+           font-weight: lighter;
+        }
+        /* traco */
+        .div-data span:nth-child(2) {
+            font-size: 48pt;
+            font-weight: lighter;
+            position: relative;
+            top: -4px;
+        }
+        /* mes */
+        .div-data div span:nth-child(1) {
+           font-size: 30pt;
+        }
+        /* ano */
+        .div-data div span:nth-child(2) {
+           font-size: 8pt;
+           display: block;
+           font-weight: bold;
         }
         .infos-footer hr {
           margin-bottom: 50px;
@@ -69,23 +92,18 @@
           justify-content: center;
           height: 100px;
         }
-
         .info-wrapper p, .info-wrapper span {
           display: flex;
         }
-
         .info-wrapper {
           display: flex;
           align-items: center;
           justify-content:space-between ;
           padding: 1px;
-          
         }
-
         .info-wrapper span:nth-child(1) {
           font-weight: bold;
         }
-
         .titular hr {
           display: flex;
           height: 100%;
@@ -96,8 +114,17 @@
    <body>
       <div class="box">
          <div class="primeira-pagina quebrar-pagina-depois-daqui">
-            <div class="div-logo">minha logo</div>
-            <div class="div-data">data</div>
+            <div class="div-logo">
+               <img src="https://i.pinimg.com/736x/1e/d7/7e/1ed77ef10ca5dde8016479dd6aed3e0a.jpg" width="87" alt="Logo">
+            </div>
+            <div class="div-data">
+               <span>02</span>
+               <span>|</span>
+               <div style="display: inline-block;">
+                  <span>abril</span>
+                  <span>2020</span>
+               </div>
+            </div>
             <div class="padding-controller">
                <img
                   class="imagem-primeira-pagina"
@@ -111,11 +138,11 @@
                   <hr />
                   <div>
                      <span><b>(31) 12345-6789</b></span>
-                     <p>mateus@wesharebrasil.com</p>
+                     <p style="color: #646365;">mateus@wesharebrasil.com</p>
                   </div>
                   <div>
                      <span><b>Mateus Nicolau</b></span>
-                     <p>Planejador Financeiro</p>
+                     <p style="color: #646365;">Planejador Financeiro</p>
                   </div>
                   <br />
                   <div>
