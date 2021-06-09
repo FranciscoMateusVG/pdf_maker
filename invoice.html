@@ -61,13 +61,27 @@
           font-weight: lighter;
           font-size: 40pt;
         }
-        
+
         /* Segunda página*/
+        .header-img {
+          display: inline;
+          margin-left: -90px;
+        }
+
+        .segunda-pagina h1 {
+          color: #4a2785;
+          font-size: 24px;
+          margin-top: 30px;
+        }
+
         .titular {
           display: flex;
           flex-flow: column wrap;
           justify-content: center;
           height: 100px;
+          background-color: #f5f7f7;
+          border-radius: 30px;
+          padding: 20px 50px;
         }
 
         .info-wrapper p, .info-wrapper span {
@@ -79,7 +93,7 @@
           align-items: center;
           justify-content:space-between ;
           padding: 1px;
-          
+          margin-inline: 50px;
         }
 
         .info-wrapper span:nth-child(1) {
@@ -90,9 +104,24 @@
           display: flex;
           height: 100%;
         }
+
+        .dependentes {
+          display: flex;
+          justify-content: center;
+          background-color: #f5f7f7;
+          border-radius: 30px;
+          padding: 20px;
+        }
+
+        .gastos {
+          display: flex;
+          justify-content: center;
+          background-color: #f5f7f7;
+          border-radius: 30px;
+          padding: 20px;
+        }
       </style>
    </head>
-
    <body>
       <div class="box">
          <div class="primeira-pagina quebrar-pagina-depois-daqui">
@@ -126,10 +155,8 @@
             </div>
          </div>
          <div class="segunda-pagina quebrar-pagina-depois-daqui">
-            <div class="div-logo">
-              minha logo
-            </div>            
-               <div>
+           <div class="segunda-pagina">
+                 <img class="header-img" src="https://imagizer.imageshack.com/img922/6586/AsKmH8.png" alt="image">     
                   <h1>Titular</h1>
                   <div class="titular">
                      <div class="info-wrapper">
@@ -161,7 +188,7 @@
                </div>
                <div>
                   <h1>Dependentes Financeiros</h1>
-                  <div class="div-dependentes">
+                  <div class="dependentes">
                      <table>
                         <thead>
                            <tr>
@@ -207,36 +234,38 @@
                   </div>
                   <div>
                      <h1>Gasto Atual</h1>
-                     <table>
-                        <thead>
-                           <tr>
-                              <th>R$ 2500,00</th>
-                              <th>DESPESA FIXA SEM EDUCAÇÃO</th>
-                           </tr>
-                        </thead>
-                        <tbody>
-                           <tr>
-                              <td>R$ 0,00</td>
-                              <td>EDUC CONJUGE</td>
-                           </tr>
-                           <tr>
-                              <td>R$ 980,00</td>
-                              <td>EDUC DEP 1</td>
-                           </tr>
-                           <tr>
-                              <td>R$ 750,00</td>
-                              <td>EDUC DEP2</td>
-                           </tr>
-                           <tr>
-                              <td>R$ 0,00</td>
-                              <td>EDUC DEP 3</td>
-                           </tr>
-                           <tr>
-                              <td>R$ 0,00</td>
-                              <td>EDUC DEP 4</td>
-                           </tr>
-                        </tbody>
-                     </table>
+                     <div class="gastos">
+                       <table>
+                          <thead>
+                             <tr>
+                                <th>R$ 2500,00</th>
+                                <th>DESPESA FIXA SEM EDUCAÇÃO</th>
+                             </tr>
+                          </thead>
+                          <tbody>
+                             <tr>
+                                <td>R$ 0,00</td>
+                                <td>EDUC CONJUGE</td>
+                             </tr>
+                             <tr>
+                                <td>R$ 980,00</td>
+                                <td>EDUC DEP 1</td>
+                             </tr>
+                             <tr>
+                                <td>R$ 750,00</td>
+                                <td>EDUC DEP2</td>
+                             </tr>
+                             <tr>
+                                <td>R$ 0,00</td>
+                                <td>EDUC DEP 3</td>
+                             </tr>
+                             <tr>
+                                <td>R$ 0,00</td>
+                                <td>EDUC DEP 4</td>
+                             </tr>
+                          </tbody>
+                       </table>
+                     </div>
                      <!-- <img src="images/grafico.png" alt="Gráfico" /> -->
                   </div>
                </div>
