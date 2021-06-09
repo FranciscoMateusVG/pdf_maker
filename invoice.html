@@ -12,6 +12,10 @@
           .quebrar-pagina-depois-daqui {
               page-break-after: always;
           }
+          .background-cinza {
+            background-color: #f5f7f7 !important;
+            -webkit-print-color-adjust: exact;
+          }
         }
         hr {
           border: 1px solid #a09e9e;
@@ -90,21 +94,21 @@
           display: inline;
           margin-left: -90px;
         }
-
         .segunda-pagina h1 {
           color: #4a2785;
           font-size: 24px;
           margin-top: 30px;
         }
-
         .titular {
           display: flex;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
           flex-flow: column wrap;
           justify-content: center;
           height: 100px;
           background-color: #f5f7f7;
           border-radius: 30px;
           padding: 20px 50px;
+          margin-bottom: 45px;
         }
         .info-wrapper p, .info-wrapper span {
           display: flex;
@@ -123,21 +127,14 @@
           display: flex;
           height: 100%;
         }
-
-        .dependentes {
+        .dependentes, .gastos {
           display: flex;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
           justify-content: center;
           background-color: #f5f7f7;
           border-radius: 30px;
           padding: 20px;
-        }
-
-        .gastos {
-          display: flex;
-          justify-content: center;
-          background-color: #f5f7f7;
-          border-radius: 30px;
-          padding: 20px;
+          margin-bottom: 45px;
         }
       </style>
    </head>
@@ -186,7 +183,7 @@
            <div class="segunda-pagina">
                  <img class="header-img" src="https://imagizer.imageshack.com/img922/6586/AsKmH8.png" alt="image">     
                   <h1>Titular</h1>
-                  <div class="titular">
+                  <div class="titular background-cinza">
                      <div class="info-wrapper">
                        <span>Nome</span>
                        <span>Mateus Nicolau</span>
@@ -216,7 +213,7 @@
                </div>
                <div>
                   <h1>Dependentes Financeiros</h1>
-                  <div class="dependentes">
+                  <div class="dependentes background-cinza">
                      <table>
                         <thead>
                            <tr>
@@ -262,7 +259,7 @@
                   </div>
                   <div>
                      <h1>Gasto Atual</h1>
-                     <div class="gastos">
+                     <div class="gastos background-cinza">
                        <table>
                           <thead>
                              <tr>
