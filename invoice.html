@@ -3,70 +3,10 @@
    <head>
       <meta charset="utf-8" />
       <title>PDF Template</title>
-      <style>
-         @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,400&display=swap");
-         html, body {
-            font-family: 'Roboto', sans-serif !important;
-         }
-         @media print {
-            .quebrar-pagina-depois-daqui {
-               page-break-after: always;
-            }
-         }
-         hr {
-            border: 1px solid #a09e9e;
-         }
-         .box {
-            padding: 60px 80px 60px 80px;
-            position: relative;
-         }
-         .div-logo {
-            float: left;
-         }
-         .div-data {
-            float: right;
-         }
-         .infos-footer hr {
-            margin-bottom: 50px;
-         }
-         .infos-footer p {
-            font-size: 10pt;
-            margin-top: 0px;
-         }
-         .infos-footer span {
-            font-size: 10pt;
-         }
-         .infos-footer div:nth-child(1) {
-            float: left;
-         }
-         .infos-footer div:nth-child(2) {
-            float: right;
-         }
-         .infos-footer div:nth-child(3) {
-            display: block;
-         }
-         .padding-controller {
-            padding-left: 250px;
-         }
-         .imagem-primeira-pagina {
-            position: absolute;
-            left: -7px;
-            top: 230px;
-         }
-         .div-titular {
-            display: flex;
-         }
-         .texto-central {
-            padding: 290px 0px;
-         }
-         .texto-central h1 {
-            color: #235aa8;
-            font-weight: lighter;
-            font-size: 40pt;
-         }
-      </style>
+      <link rel="stylesheet" href="./style.css">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
    </head>
-
    <body>
       <div class="box">
          <div class="primeira-pagina quebrar-pagina-depois-daqui">
@@ -101,23 +41,36 @@
          </div>
          <div class="segunda-pagina quebrar-pagina-depois-daqui">
             <div class="div-logo">
-               minha logo
+              minha logo
+            </div>            
                <div>
                   <h1>Titular</h1>
-                  <div class="div-titular">
-                     <span>Nome</span>
-                     <p>Mateus Nicolau</p>
-                     <span>Profissão</span>
-                     <p>Corretor de Seguros</p>
-                     <span>Telefone</span>
-                     <p>(31) 9.8782-3849</p>
-                     <hr />
-                     <span>Data de Nasc.</span>
-                     <p>30.06.1988</p>
-                     <span>Estado Civil</span>
-                     <p>Casado (a)</p>
-                     <span>Abordagem</span>
-                     <p>N/A</p>
+                  <div class="titular">
+                     <div class="info-wrapper">
+                       <span>Nome</span>
+                       <span>Mateus Nicolau</span>
+                     </div>
+                     <div class="info-wrapper">
+                       <span>Profissão</span>
+                       <span>Corretor de Seguros</span>
+                     </div>
+                     <div class="info-wrapper">
+                       <span>Telefone</span>
+                       <span>(31) 9.8782-3849</span>
+                     </div>
+                     <hr/>
+                     <div class="info-wrapper">
+                       <span>Data de Nasc.</span>
+                       <span>30.06.1988</span>
+                     </div>
+                     <div class="info-wrapper">
+                       <span>Estado Civil</span>
+                       <span>Casado (a)</span>  
+                     </div>
+                     <div class="info-wrapper">
+                       <span>Abordagem</span>
+                       <span>N/A</span>
+                     </div>
                   </div>
                </div>
                <div>

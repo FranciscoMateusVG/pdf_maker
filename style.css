@@ -1,0 +1,97 @@
+@media print {
+  .quebrar-pagina-depois-daqui {
+    page-break-after: always;
+  }
+}
+
+/* Primeira página*/
+html, body {
+   font-family: 'Roboto', sans-serif !important;
+}
+
+hr {
+   border: 1px solid #a09e9e;
+}
+
+.box {
+   padding: 60px 80px 60px 80px;
+   position: relative;
+}
+
+.div-logo {
+   float: left;
+}
+
+.div-data {
+   float: right;
+}
+
+.infos-footer hr {
+   margin-bottom: 50px;
+}
+
+.infos-footer p {
+   font-size: 10pt;
+   margin-top: 0px;
+}
+
+.infos-footer span {
+   font-size: 10pt;
+}
+
+.infos-footer div:nth-child(1) {
+   float: left;
+}
+
+.infos-footer div:nth-child(2) {
+   float: right;
+}
+
+.infos-footer div:nth-child(3) {
+   display: block;
+}
+
+.padding-controller {
+   padding-left: 250px;
+}
+
+.imagem-primeira-pagina {
+   position: absolute;
+   left: -7px;
+   top: 230px;
+}
+
+.texto-central {
+   padding: 290px 0px;
+}
+
+.texto-central h1 {
+   color: #235aa8;
+   font-weight: lighter;
+   font-size: 40pt;
+}
+
+/* Segunda página*/
+.titular {
+   display: flex;
+   flex-flow: column wrap;
+   justify-items: stretch;
+   height: 100px;
+}
+
+.info-wrapper p, .info-wrapper span {
+  display: flex;
+}
+
+.info-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content:space-between ;
+  padding: 5px;
+  
+}
+
+.titular hr {
+  display: flex;
+  height: 100%;
+}
