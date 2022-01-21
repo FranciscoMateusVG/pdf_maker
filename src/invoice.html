@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>PDF Template</title>
+    <link rel="stylesheet" href="main.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,400&display=swap");
+
+      html,
+      body {
+        font-family: Roboto, sans-serif !important;
+        margin: 0.75rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <section id="cabecalho">
+      <div class="titulo-container">
+        <span>Relatório operacional:</span>
+        <span>02-01-2022</span>
+      </div>
+      <table class="table-header">
+        <tr>
+          <th>Navio</th>
+          <th>Carga</th>
+          <th>Prioridade</th>
+          <th>Agente</th>
+          <th>Berço</th>
+        </tr>
+        <tr>
+          <td style="display: flex; flex-direction: column; padding: 2px">
+            <span>IPANEMA BEACH</span> <span>IMO: 9663269 APPA: 65.997</span>
+          </td>
+          <td>SSP</td>
+          <td>8.000</td>
+          <td>ROCHAMAR</td>
+          <td>211</td>
+        </tr>
+      </table>
+      <img
+        class="img-header"
+        src="https://i.ibb.co/jRVLks4/icon-224x116.png"
+        alt="logo rocha"
+      />
+      <table class="table-info">
+        <tr>
+          <th>LOG</th>
+          <th>Resumo da operação</th>
+          <th>Percentual da descarga concluída</th>
+        </tr>
+        <tr>
+          <td>
+            {{#each logs}}
+            <ul style="font: 9px Roboto; font-weight: 300">
+              <span>{{this.prop}}</span>
+              <span>{{this.value}}</span>
+            </ul>
+
+            {{/each}}
+          </td>
+          <td>
+            {{#each resumo}}
+            <ul style="font: 10px Roboto">
+              <span>{{this.prop}}</span>
+              <span>{{this.value}}</span>
+            </ul>
+            {{/each}}
+          </td>
+          <td>{{percentualDescarga}}</td>
+        </tr>
+      </table>
+    </section>
+    <section id="prancha">
+      <table class="table-prancha">
+        <tr class="main">
+          <th></th>
+          <th></th>
+          <th>porão #1</th>
+          <th>porão #2</th>
+          <th>porão #3</th>
+          <th>porão #4</th>
+          <th>porão #5</th>
+          <th>porão #6</th>
+          <th>Somatório</th>
+        </tr>
+        <tr class="sub">
+          <td></td>
+          <td>Plano de descarga</td>
+          {{#each descargaPorao}}
+          <td>{{this}}</td>
+          {{/each}}
+        </tr>
+        {{#each dadosPrancha}}
+        <tr class="dados">
+          {{{this}}}
+        </tr>
+        {{/each}}
+      </table>
+    </section>
+  </body>
+</html>
