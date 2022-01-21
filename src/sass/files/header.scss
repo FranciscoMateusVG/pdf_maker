@@ -1,25 +1,22 @@
 /* titulo */
 .titulo-container {
-  background-color: #fc9903;
-  color: white;
+  background-color: $laranja-main;
+  color: $branco;
   padding: 5px;
   width: 250px;
   border-radius: 0 15px 15px 0;
   display: flex;
-  font-family: "Roboto", sans-serif;
   margin-bottom: 5px;
 
   span {
     &:first-child {
       width: 20%;
-      font-size: 20px;
-      font-weight: bold;
+      font: fontF(20px, bold);
     }
 
     &:last-child {
-      padding: 29px 0 0 80px;
-      font-size: 15px;
-      font-weight: bold;
+      padding: 28px 0 0 80px;
+      font: fontF(15px, bold);
     }
   }
 }
@@ -31,8 +28,8 @@
 
   tr {
     &:first-child {
-      background-color: #fc9903;
-      color: white;
+      background-color: $laranja-main;
+      color: $branco;
       font: 10px Roboto;
 
       th {
@@ -66,8 +63,8 @@
 
   tr {
     &:first-child {
-      background-color: #fc9903;
-      color: white;
+      background-color: $laranja-main;
+      color: $branco;
       font: 9px Roboto;
 
       th {
@@ -95,24 +92,24 @@
             padding-right: 5px;
           }
           ul:nth-last-child(2) {
-            background-color: #fc9903;
+            background-color: $laranja-main;
             padding: 2px;
             font-weight: 400 !important;
             font-size: 10px !important;
-            border: 0.2px solid rgb(155, 152, 152);
+            border: 0.2px solid $cinza;
           }
 
           ul:last-child {
-            background-color: #fc9903;
+            background-color: $laranja-main;
             padding: 2px;
             font-weight: 400 !important;
             font-size: 10px !important;
-            border: 0.2px solid rgb(155, 152, 152);
+            border: 0.2px solid $cinza;
           }
 
           ul:last-child {
-            background-color: #515151;
-            color: white;
+            background-color: $cinza-bold;
+            color: $branco;
             padding: 2px;
           }
         }
@@ -122,11 +119,11 @@
             font-weight: 600 !important;
             padding-left: 5px;
             padding-right: 5px;
-            color: #525150;
+            color: $cinza-bold;
 
             &:last-child {
-              background-color: #cbcbcb;
-              border: 0.1px solid rgb(155, 152, 152);
+              background-color: $cinza;
+              border: 0.1px solid $cinza;
               padding-top: 2px;
               padding-bottom: 2px;
             }
