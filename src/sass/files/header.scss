@@ -33,7 +33,7 @@
       font: 10px Roboto;
 
       th {
-        :last-child {
+        &:last-child {
           border-radius: 0 5px 5px 0;
         }
       }
@@ -70,7 +70,7 @@
       th {
         padding: 5px 0 5px 0;
 
-        :last-child {
+        &:last-child {
           border-radius: 0 5px 5px 0;
         }
       }

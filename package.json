@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "gulp": "gulp sass:watch",
-    "start": "nodemon -e html,css,js ./src"
+    "dev": "gulp sass:watch & nodemon -e html,js ./src"
   },
   "author": "hardeeksharma",
   "license": "ISC",

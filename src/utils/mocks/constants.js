@@ -1,4 +1,7 @@
 let data = {
+  barco: {
+    nome: "IPANEMA BEACH",
+  },
   logs: [
     { prop: "Porto de carregamento:", value: "Damieta, Egito" },
     { prop: "Porto da descarga:", value: "Paranagua, Brasil" },
@@ -37,7 +40,10 @@ let data = {
          <td>1.738,120</td>
          <td></td>
          <td></td>
-         <td>1.738,120<span class='tons'>tons</span></td>`,
+         <td style='flex-direction: row-reverse;display: flex;'>
+         <span class='tons'>tons</span>
+         1.738,120
+         </td>`,
     `<td></td>
          <td>13:00 as 19:00</td>
          <td>5,360</td>
@@ -46,7 +52,10 @@ let data = {
          <td>346,400</td>
          <td></td>
          <td></td>
-         <td>351,760<span class='tons'>tons</span></td>`,
+         <td style='flex-direction: row-reverse;display: flex;'>
+         <span class='tons'>tons</span>
+         351,760
+         </td>`,
     `<td></td>
          <td>19:00 as 01:00</td>
          <td></td>
@@ -55,7 +64,10 @@ let data = {
          <td></td>
          <td></td>
          <td></td>
-         <td>0,000<span class='tons'>tons</span></td>`,
+         <td style='flex-direction: row-reverse;display: flex;'>
+         <span class='tons'>tons</span>
+         0,000
+         </td>`,
 
     `<td></td>
          <td>01:00 as 07:00</td>
@@ -65,34 +77,46 @@ let data = {
          <td></td>
          <td></td>
          <td></td>
-         <td>0,000<span class='tons'>tons</span></td>`,
+         <td style='flex-direction: row-reverse;display: flex;'>
+         <span class='tons'>tons</span>
+         0,000
+         </td>`,
     `<td></td>
          <td>Total do dia</td>
-         <td>5,360</td>
-         <td>0,000</td>
-         <td>0,000</td>
-         <td>2.084,520</td>
-         <td>0,000</td>
-         <td>0,000</td>
-         <td>2.089,880<span class='tons'>tons</span></td>`,
+         <td style='color:white'>5,360</td>
+         <td style='color:white'>0,000</td>
+         <td style='color:white'>0,000</td>
+         <td style='color:white'>2.084,520</td>
+         <td style='color:white'>0,000</td>
+         <td style='color:white'>0,000</td>
+         <td style='flex-direction: row-reverse;display: flex;color:white'>
+         <span class='tons'>tons</span>
+         2.089,880
+         </td>`,
     `<td></td>
          <td>Total descarregado</td>
-         <td>6.559,620</td>
-         <td>0,000</td>
-         <td>6.317,540</td>
-         <td>2.814,400</td>
-         <td>7.937,160</td>
-         <td>0,000</td>
-         <td>23.628,720<span class='tons'>tons</span></td>`,
+         <td style='color:white'>6.559,620</td>
+         <td style='color:white'>0,000</td>
+         <td style='color:white'>6.317,540</td>
+         <td style='color:white'>2.814,400</td>
+         <td style='color:white'>7.937,160</td>
+         <td style='color:white'>0,000</td>
+         <td style='flex-direction: row-reverse;display: flex;color:white'>
+         <span class='tons'>tons</span>
+         23.628,720
+         </td>`,
     `<td></td>
          <td>Saldo atual</td>
          <td style='color:blue'>+259,620</td>
-         <td>(0,000)</td>
+         <td style='color:white'>(0,000)</td>
          <td style='color:blue'>+17,540 </td>
-         <td>(885,600)</td>
+         <td style='color:white'>(885,600)</td>
          <td style='color:blue'>+527,160 </td>
-         <td>(0,000)</td>
-         <td>(81,280) <span class='tons'>tons</span></td>`,
+         <td style='color:white'>(0,000)</td>
+         <td style='flex-direction: row-reverse;display: flex;color:white'>
+         <span class='tons'>tons</span>
+         (81,280)
+         </td>`,
   ],
 };
 

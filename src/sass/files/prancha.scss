@@ -1,30 +1,67 @@
+//Prancha
+#prancha {
+  position: relative;
+}
+
+/* Decor */
+.img-boat {
+  position: absolute;
+  width: 112px;
+  right: 4px;
+  top: -99px;
+}
+
+.img-bordo {
+  transform: scale(0.6);
+  position: absolute;
+  width: 60px;
+  right: -10px;
+  top: -41px;
+}
+
+.img-estibordo {
+  position: absolute;
+  width: 37px;
+  height: 90px;
+  left: -1px;
+  top: 25px;
+}
+.decor {
+  font: fontF(10px, "500");
+  position: absolute;
+  text-align: center;
+  border: 1px solid black;
+  right: 4px;
+  top: -12px;
+  width: 109px;
+}
+
 // Tabela
 .table-prancha {
   border-spacing: 0;
-  width: 80%;
+  width: 95%;
 }
 
 /* Main */
 .main {
   th {
-    font-size: 9px;
-    border-bottom: 1px solid black;
+    font-size: 8px;
+    border-bottom: 1px solid $preto;
     &:last-child {
-      background-color: #fc9903;
-      font-size: 15px;
+      background-color: $laranja-main;
+      font-size: 10px;
       border-bottom: 0;
-      border-left: 1px solid black;
-      border-top: 1px solid black;
+      border-left: 1px solid $preto;
+      border-top: 1px solid $preto;
     }
   }
 }
 
 /* Sub */
 .sub {
-  font-size: 10px;
-  font-weight: bold;
-  background-color: #fc9903;
-  color: white;
+  font: fontF(8px, bold);
+  background-color: $laranja-main;
+  color: $branco;
   text-align: center;
 
   td {
@@ -32,55 +69,72 @@
     border-right: 0.1px solid #b16b03;
     border-bottom: 1px solid #ffcd14;
     &:first-child {
-      border-left: 1px solid black;
-      border-right: 1px solid white;
-      border-bottom: 1px solid white;
+      border-left: 1px solid $preto;
+      border-right: 1px solid $branco;
+      border-bottom: 1px solid $branco;
     }
     &:last-child {
-      color: black;
+      color: $preto;
     }
   }
 }
 
 /* Dados */
 .dados {
+  font-weight: bold;
   &:nth-last-child(1) td:last-child {
-    background-color: grey !important;
+    background-color: $cinza-dark !important;
   }
   &:nth-last-child(1) td:nth-child(2) {
-    background-color: grey !important;
+    background-color: $cinza-dark !important;
   }
   &:nth-last-child(1) {
-    background-color: grey !important;
+    background-color: $cinza-dark !important;
+
+    td {
+      font-size: 13px !important;
+
+      .tons {
+        padding-top: 8px !important;
+      }
+    }
   }
 
   &:nth-last-child(2) {
-    background-color: rgb(185, 185, 185);
+    background-color: $cinza;
   }
   &:nth-last-child(3) {
-    background-color: grey !important;
+    background-color: $cinza-dark !important;
   }
 
   &:nth-last-child(3) td:nth-child(2) {
-    background-color: grey !important;
+    background-color: $cinza-dark !important;
   }
   &:nth-last-child(3) td:last-child {
-    background-color: grey !important;
+    background-color: $cinza-dark !important;
   }
 
   td {
     font-size: 9px;
     text-align: center;
     &:first-child {
-      background-color: white !important;
+      background-color: $branco !important;
     }
 
     &:nth-child(2) {
-      background-color: rgb(185, 185, 185);
+      background-color: $cinza;
     }
 
     &:nth-last-child(1) {
-      background-color: rgb(185, 185, 185);
+      background-color: $cinza;
     }
   }
+}
+
+.tons {
+  color: black !important;
+  font-size: 6px !important;
+  padding-top: 3px;
+  margin-left: 5px;
+  padding-right: 2px;
 }
