@@ -1,0 +1,135 @@
+.table-rateio {
+    border-spacing: 0;
+    width: 95%;
+    border-collapse: collapse;
+    .main {
+        th {
+            border-collapse: collapse;
+            border-bottom: 0.5px solid $preto;
+            border-top: 0.5px solid $preto;
+            font-size: 6px;
+            background-color: $laranja-main;
+
+            &:first-child {
+                border-collapse: collapse;
+                border-left: 0.5px solid $preto;
+            }
+
+            &:last-child {
+                border-collapse: collapse;
+                border-right: 0.5px solid $preto;
+            }
+        }
+    }
+
+    .mainEmpresa {
+        th {
+            border-collapse: collapse;
+            border-bottom: 0.5px solid $preto;
+            border-top: 0.5px solid $preto;
+            font-size: 6px;
+            background-color: $laranja-main;
+            border: 0.5px solid $preto;
+        }
+    }
+
+    .footer {
+        font-weight: bold;
+        td {
+            height: 18px;
+
+            font-size: 6px;
+            background-color: $cinza-dark;
+            text-align: center;
+        }
+    }
+
+    .break {
+        height: 8px;
+        td {
+            border: 0.5px solid $preto;
+        }
+    }
+
+    .rateioDevolver {
+        background-color: #a3b6d5;
+    }
+
+    .rateioRetirar {
+        background-color: #87c180;
+    }
+
+    .varreduraRetirar {
+        background-color: #c8aec9;
+    }
+
+    .sub {
+        height: 17px;
+        font-size: 6px;
+        text-align: center;
+        text-transform: uppercase;
+        td {
+            border-collapse: collapse;
+            border: 0.5px solid $preto;
+            position: relative;
+        }
+
+        .positive {
+            color: blue;
+        }
+        .negative {
+            color: red;
+        }
+
+        .conclusao {
+            top: 2px;
+            left: 2px;
+            z-index: -1;
+            position: absolute;
+            width: $cem;
+            height: 12px;
+            background: linear-gradient(
+                90deg,
+                rgba(252, 153, 3, 1) 0%,
+                rgba(252, 153, 3, 1) 40%,
+                rgba(255, 227, 185, 1) 100%
+            );
+        }
+
+        .noventa {
+            width: $noventa;
+        }
+
+        .oitenta {
+            width: $oitenta;
+        }
+
+        .setenta {
+            width: $setenta;
+        }
+
+        .sessenta {
+            width: $sessenta;
+        }
+
+        .cinquenta {
+            width: $cinquenta;
+        }
+
+        .quarenta {
+            width: $quarenta;
+        }
+
+        .trinta {
+            width: $trinta;
+        }
+
+        .vinte {
+            width: $vinte;
+        }
+
+        .dez {
+            width: $dez;
+        }
+    }
+}

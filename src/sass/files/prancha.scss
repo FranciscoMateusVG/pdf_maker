@@ -1,6 +1,7 @@
 //Prancha
 #prancha {
   position: relative;
+  margin-bottom: 20px;
 }
 
 /* Decor */
@@ -40,9 +41,8 @@
 .table-prancha {
   border-spacing: 0;
   width: 95%;
-}
 
-/* Main */
+  /* Main */
 .main {
   th {
     font-size: 8px;
@@ -138,3 +138,6 @@
   margin-left: 5px;
   padding-right: 2px;
 }
+}
+
+

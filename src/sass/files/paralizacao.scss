@@ -1,0 +1,33 @@
+.table-paralizacao {
+    border-spacing: 0;
+    width: 95%;
+    border-collapse: collapse;
+    .main {
+        th {
+            border-collapse: collapse;
+            border-bottom: 0.5px solid $preto;
+        
+            font-size: 8px;
+            background-color: $laranja-main;
+
+            &:first-child {
+                border-collapse: collapse;
+                border-left: 0.5px solid $preto;
+            }
+
+            &:last-child {
+                border-collapse: collapse;
+                border-right: 0.5px solid $preto;
+            }
+        }
+    }
+
+    .sub{
+        font-size: 8px;
+        text-align: center;
+        td{
+            border:  0.5px solid $preto;
+        }
+    }
+ 
+}
