@@ -373,4 +373,33 @@
 }
 .table-paralizacao .sub td {
   border: 0.5px solid black;
+  position: relative;
+}
+.table-paralizacao .sub td:nth-child(6) {
+  background-color: #fc9903;
+}
+.table-paralizacao .programado {
+  background-color: #7ee78c;
+  text-align: left;
+  border: 0 !important;
+}
+.table-paralizacao .naoProgramado {
+  background-color: #e5e77e;
+  text-align: left;
+  border: 0 !important;
+}
+.table-paralizacao .expurgado {
+  background-color: #7ed2e7;
+  text-align: left;
+  border: 0 !important;
+}
+.table-paralizacao .vertical {
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+  position: absolute;
+  transform: rotate(180deg);
+  top: 0px;
+  right: 3px;
+  z-index: 100;
+  height: 75px;
 }
