@@ -24,6 +24,19 @@ async function geraPDF() {
     console.log("Compiling the template with handlebars");
     const template = hb.compile(temp, { strict: true });
 
+    data.imagemLogo = `<img src="data:image/png;base64,${fs
+      .readFileSync(path.join(__dirname, "../", `/assets/icone.png`))
+      .toString("base64")}" class="img-header">`;
+    data.imagemBarco = `<img src="data:image/png;base64,${fs
+      .readFileSync(path.join(__dirname, "../", `/assets/barco.png`))
+      .toString("base64")}" class="img-boat">`;
+    data.imagemProa = `<img src="data:image/png;base64,${fs
+      .readFileSync(path.join(__dirname, "../", `/assets/proa.png`))
+      .toString("base64")}" class="img-bordo">`;
+    data.imagemEstiBordo = `<img src="data:image/png;base64,${fs
+      .readFileSync(path.join(__dirname, "../", `/assets/estibordo.png`))
+      .toString("base64")}" class="img-estibordo">`;
+
     const result = template(data);
 
     const html = result;
@@ -53,6 +66,19 @@ async function testa() {
 
   console.log("Compiling the template with handlebars");
   const template = hb.compile(temp, { strict: true });
+
+  data.imagemLogo = `<img src="data:image/png;base64,${fs
+    .readFileSync(path.join(__dirname, "../", `/assets/icone.png`))
+    .toString("base64")}" class="img-header">`;
+  data.imagemBarco = `<img src="data:image/png;base64,${fs
+    .readFileSync(path.join(__dirname, "../", `/assets/barco.png`))
+    .toString("base64")}" class="img-boat">`;
+  data.imagemProa = `<img src="data:image/png;base64,${fs
+    .readFileSync(path.join(__dirname, "../", `/assets/proa.png`))
+    .toString("base64")}" class="img-bordo">`;
+  data.imagemEstiBordo = `<img src="data:image/png;base64,${fs
+    .readFileSync(path.join(__dirname, "../", `/assets/estibordo.png`))
+    .toString("base64")}" class="img-estibordo">`;
 
   const result = template(data);
 

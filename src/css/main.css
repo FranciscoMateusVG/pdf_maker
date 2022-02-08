@@ -125,7 +125,7 @@
   position: absolute;
   width: 112px;
   right: 4px;
-  top: -99px;
+  top: -105px;
 }
 
 .img-bordo {
@@ -133,7 +133,7 @@
   position: absolute;
   width: 60px;
   right: -10px;
-  top: -41px;
+  top: -45px;
 }
 
 .img-estibordo {
@@ -251,7 +251,7 @@
   border-collapse: collapse;
   border-bottom: 0.5px solid black;
   border-top: 0.5px solid black;
-  font-size: 6px;
+  font-size: 9px;
   background-color: #fc9903;
 }
 .table-rateio .main th:first-child {
@@ -266,7 +266,7 @@
   border-collapse: collapse;
   border-bottom: 0.5px solid black;
   border-top: 0.5px solid black;
-  font-size: 6px;
+  font-size: 10px;
   background-color: #fc9903;
   border: 0.5px solid black;
 }
@@ -275,8 +275,9 @@
 }
 .table-rateio .footer td {
   height: 18px;
-  font-size: 6px;
-  background-color: grey;
+  border-bottom: 1px solid black;
+  font-size: 8px;
+  background-color: #8b8b8b;
   text-align: center;
 }
 .table-rateio .break {
@@ -286,17 +287,17 @@
   border: 0.5px solid black;
 }
 .table-rateio .rateioDevolver {
-  background-color: #a3b6d5;
+  background-color: #b0c5de;
 }
 .table-rateio .rateioRetirar {
-  background-color: #87c180;
+  background-color: #d3e0b6;
 }
 .table-rateio .varreduraRetirar {
-  background-color: #c8aec9;
+  background-color: #c5b8d3;
 }
 .table-rateio .sub {
   height: 17px;
-  font-size: 6px;
+  font-size: 8px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -369,6 +370,7 @@
 }
 .table-paralizacao .sub {
   font-size: 8px;
+  font-weight: bold;
   text-align: center;
 }
 .table-paralizacao .sub td {
@@ -377,29 +379,57 @@
 }
 .table-paralizacao .sub td:nth-child(6) {
   background-color: #fc9903;
+  font-weight: bold;
+}
+.table-paralizacao .sub td:nth-child(9) {
+  background-color: #fc9903;
+  font-weight: bold;
+}
+.table-paralizacao .sub .finalizado {
+  background-color: yellow;
+  color: red;
+  font-weight: bold;
 }
 .table-paralizacao .programado {
-  background-color: #7ee78c;
+  background-color: #c6ffc8;
   text-align: left;
   border: 0 !important;
 }
 .table-paralizacao .naoProgramado {
-  background-color: #e5e77e;
+  background-color: #ffff97;
   text-align: left;
   border: 0 !important;
 }
 .table-paralizacao .expurgado {
-  background-color: #7ed2e7;
+  background-color: #c6ffff;
   text-align: left;
   border: 0 !important;
 }
-.table-paralizacao .vertical {
+.table-paralizacao .verticalProgramado {
   writing-mode: vertical-lr;
   text-orientation: mixed;
   position: absolute;
   transform: rotate(180deg);
-  top: 0px;
-  right: 3px;
   z-index: 100;
-  height: 75px;
+  height: 0px;
+  right: 4px;
+}
+.table-paralizacao .verticalNaoProgramado {
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+  position: absolute;
+  transform: rotate(180deg);
+  z-index: 100;
+  top: 20px;
+  height: 90px;
+  right: 4px;
+}
+.table-paralizacao .verticalExpurgado {
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+  position: absolute;
+  transform: rotate(180deg);
+  z-index: 100;
+  height: 20px;
+  right: 4px;
 }

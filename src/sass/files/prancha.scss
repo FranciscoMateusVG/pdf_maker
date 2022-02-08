@@ -9,7 +9,7 @@
   position: absolute;
   width: 112px;
   right: 4px;
-  top: -99px;
+  top: -105px;
 }
 
 .img-bordo {
@@ -17,7 +17,7 @@
   position: absolute;
   width: 60px;
   right: -10px;
-  top: -41px;
+  top: -45px;
 }
 
 .img-estibordo {
@@ -43,101 +43,99 @@
   width: 95%;
 
   /* Main */
-.main {
-  th {
-    font-size: 8px;
-    border-bottom: 1px solid $preto;
-    &:last-child {
-      background-color: $laranja-main;
-      font-size: 10px;
-      border-bottom: 0;
-      border-left: 1px solid $preto;
-      border-top: 1px solid $preto;
-    }
-  }
-}
-
-/* Sub */
-.sub {
-  font: fontF(8px, bold);
-  background-color: $laranja-main;
-  color: $branco;
-  text-align: center;
-
-  td {
-    border-left: 0.1px solid #b16b03;
-    border-right: 0.1px solid #b16b03;
-    border-bottom: 1px solid #ffcd14;
-    &:first-child {
-      border-left: 1px solid $preto;
-      border-right: 1px solid $branco;
-      border-bottom: 1px solid $branco;
-    }
-    &:last-child {
-      color: $preto;
-    }
-  }
-}
-
-/* Dados */
-.dados {
-  font-weight: bold;
-  &:nth-last-child(1) td:last-child {
-    background-color: $cinza-dark !important;
-  }
-  &:nth-last-child(1) td:nth-child(2) {
-    background-color: $cinza-dark !important;
-  }
-  &:nth-last-child(1) {
-    background-color: $cinza-dark !important;
-
-    td {
-      font-size: 13px !important;
-
-      .tons {
-        padding-top: 8px !important;
+  .main {
+    th {
+      font-size: 8px;
+      border-bottom: 1px solid $preto;
+      &:last-child {
+        background-color: $laranja-main;
+        font-size: 10px;
+        border-bottom: 0;
+        border-left: 1px solid $preto;
+        border-top: 1px solid $preto;
       }
     }
   }
 
-  &:nth-last-child(2) {
-    background-color: $cinza;
-  }
-  &:nth-last-child(3) {
-    background-color: $cinza-dark !important;
-  }
-
-  &:nth-last-child(3) td:nth-child(2) {
-    background-color: $cinza-dark !important;
-  }
-  &:nth-last-child(3) td:last-child {
-    background-color: $cinza-dark !important;
-  }
-
-  td {
-    font-size: 9px;
+  /* Sub */
+  .sub {
+    font: fontF(8px, bold);
+    background-color: $laranja-main;
+    color: $branco;
     text-align: center;
-    &:first-child {
-      background-color: $branco !important;
-    }
 
-    &:nth-child(2) {
-      background-color: $cinza;
-    }
-
-    &:nth-last-child(1) {
-      background-color: $cinza;
+    td {
+      border-left: 0.1px solid #b16b03;
+      border-right: 0.1px solid #b16b03;
+      border-bottom: 1px solid #ffcd14;
+      &:first-child {
+        border-left: 1px solid $preto;
+        border-right: 1px solid $branco;
+        border-bottom: 1px solid $branco;
+      }
+      &:last-child {
+        color: $preto;
+      }
     }
   }
-}
 
-.tons {
-  color: black !important;
-  font-size: 6px !important;
-  padding-top: 3px;
-  margin-left: 5px;
-  padding-right: 2px;
-}
-}
+  /* Dados */
+  .dados {
+    font-weight: bold;
+    &:nth-last-child(1) td:last-child {
+      background-color: $cinza-dark !important;
+    }
+    &:nth-last-child(1) td:nth-child(2) {
+      background-color: $cinza-dark !important;
+    }
+    &:nth-last-child(1) {
+      background-color: $cinza-dark !important;
 
+      td {
+        font-size: 13px !important;
 
+        .tons {
+          padding-top: 8px !important;
+        }
+      }
+    }
+
+    &:nth-last-child(2) {
+      background-color: $cinza;
+    }
+    &:nth-last-child(3) {
+      background-color: $cinza-dark !important;
+    }
+
+    &:nth-last-child(3) td:nth-child(2) {
+      background-color: $cinza-dark !important;
+    }
+    &:nth-last-child(3) td:last-child {
+      background-color: $cinza-dark !important;
+    }
+
+    td {
+      font-size: 9px;
+      text-align: center;
+      &:first-child {
+        background-color: $branco !important;
+      }
+
+      &:nth-child(2) {
+        background-color: $cinza;
+      }
+
+      &:nth-last-child(1) {
+        background-color: $cinza;
+      }
+    }
+  }
+
+  .tons {
+    color: black !important;
+    font-size: 6px !important;
+    padding-top: 3px;
+    margin-left: 5px;
+    padding-right: 2px;
+  }
+}
